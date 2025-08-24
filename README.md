@@ -9,7 +9,7 @@
 - **Responsive UI:** Clean and intuitive interface.
 
 ## Tech Stack
-- **Frontend:** React, TailwindCSS (optional)
+- **Frontend:** React, TailwindCSS
 - **Backend:** Node.js, Express, Apollo Server (GraphQL)
 - **Database:** MongoDB (Sample-Mflix dataset)
 - **Other Tools:** dotenv for environment variables
