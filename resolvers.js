@@ -19,16 +19,19 @@ export const resolvers = {
             queryVector: queryVec,
             path: "plot_embedding",
             numCandidates: 100,
-            limit: 4,
+            limit: 6,
             index: "vector_index",
           },
         },
       ]).toArray();
 
       return results.map(doc => ({
+        id: doc._id,
         title: doc.title,
         plot: doc.plot,
+        poster: doc.poster, 
       }));
     },
   },
 };
+

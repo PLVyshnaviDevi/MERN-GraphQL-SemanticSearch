@@ -44,7 +44,7 @@ async function populateEmbeddings() {
 }
 
 async function startServer() {
-//   await populateEmbeddings();
+  //  await populateEmbeddings();
 
   const server = new ApolloServer({ typeDefs, resolvers });
   await server.start();
@@ -52,7 +52,7 @@ async function startServer() {
 
   const PORT = process.env.PORT || 4000;
   app.listen(PORT, () =>
-    console.log(`Server ready at http://localhost:${PORT}${server.graphqlPath}`)
+    console.log(`Server ready at http://localhost:${PORT}${server.graphqlPath}`) 
   );
 }
 
