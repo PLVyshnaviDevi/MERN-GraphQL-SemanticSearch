@@ -22,27 +22,37 @@ git clone https://github.com/PLVyshnaviDevi/MERN-GraphQL-SemanticSearch.git
 ```
 
 2. **Install dependencies:**
+
+    **react, react-dom** → Core React
+
+    **@apollo/client** → Apollo Client for GraphQL queries/mutations
+
+    **graphql** → Required for Apollo
+
+    **tailwindcss, postcss, autoprefixer** → For styling (your code uses Tailwind classes)
+
 Backend
 ```bash
 npm install express apollo-server-express graphql mongoose mongodb dotenv @huggingface/inference
 ```
+   
 Frontend
+
 ```bash
 npm install react react-dom @apollo/client graphql
 npm install tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-**react, react-dom** → Core React
-**@apollo/client** → Apollo Client for GraphQL queries/mutations
-**graphql** → Required for Apollo
-**tailwindcss, postcss, autoprefixer** → For styling (your code uses Tailwind classes)
+
 
 3. **Configure environment variables:**
-    Create a **.env** file with your MongoDB connection string and hugging face API key - "HF_API_KEY" and "MONGO_URI".
+    Create a **.env** file with your MongoDB connection string and hugging face API key - "**HF_API_KEY**" and "**MONGO_URI**".
+
 
 4. **Run the project**
 ```bash
 cd backend && npm start
 cd ../frontend && npm start
 ```
+
